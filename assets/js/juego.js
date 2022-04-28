@@ -38,7 +38,7 @@ const miModulo = (() => {
     };
 
 
-    //Esta funcion crea un nuevo deck
+    //Esta funcion crea un nuevo deck y entregarlo random
     const crearDeck = () => {
         deck = [];
         for (let i = 2; i <= 10; i++) {
@@ -88,7 +88,7 @@ const miModulo = (() => {
 
         return puntosJugadores[turno];
     }
-
+    //Esta funcion me permite crear una carta en el HTML
     const crearCarta = (carta, turno) => {
 
         const imgCarta = document.createElement('img');
@@ -97,7 +97,7 @@ const miModulo = (() => {
         divCartasJugadores[turno].append(imgCarta);
 
     }
-
+    // Esta funcion me permite determinar el ganador 
     const determinarGanador = () => {
         const [puntosMinimos, puntosComputador] = puntosJugadores;
 
@@ -150,11 +150,9 @@ const miModulo = (() => {
 
     });
 
-
     btnDetener.addEventListener('click', () => {
         btnDetener.disabled = true;
         btnPedir.disabled = true;
-        //acumularPuntos(carta, puntosJugadores.length - 1);
         turnoComputadora(puntosJugadores[0]);
     })
 
