@@ -35,6 +35,6 @@ Este proyecto fue desarrollado como parte de un curso de **JavaScript** dictado 
 
 1. Clona este repositorio:
    ```
-   git clone https://github.com/tuusuario/JuegoBlackJack.githttps://github.com/edwinmoreno77/JuegoBlackJack.git
+   git clone https://github.com/edwinmoreno77/JuegoBlackJack.git
    cd JuegoBlackJack
    ```
